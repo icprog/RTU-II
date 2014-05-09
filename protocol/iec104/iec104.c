@@ -1246,14 +1246,14 @@ void IEC104_analy(IEC104_Param_T *IEC104_param, uint8_t *recv_buff, uint16_t rec
 //	return ;
 //}		/* -----  end of function thread_for_IEC104  ----- */
 
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  IEC104_process
- *  Description:  IEC104协议处理的接口函数.周期性调用.
- * =====================================================================================
- */
-uint8_t IEC104_process(IEC104_param_t *iec104_param, uint8_t *send_buff, uint16_t send_size, uint8_t* recv_buff, uint16_t recv_size){
-
-	return ;
-}		/* -----  end of function IEC104_process  ----- */
+///*
+// * ===  FUNCTION  ======================================================================
+// *         Name:  IEC104_process
+// *  Description:  IEC104协议处理的接口函数.周期性调用.
+// * =====================================================================================
+// */
+//uint8_t IEC104_process(IEC104_param_t *iec104_param, uint8_t *send_buff, uint16_t send_size, uint8_t* recv_buff, uint16_t recv_size){
+//
+//	return ;
+//}		/* -----  end of function IEC104_process  ----- */
 

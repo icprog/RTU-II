@@ -55,33 +55,33 @@ extern "C" {
 #define 	OFF				0x00	
 
 
-typedef struct{
-
-
-} IEC104_Param_T;
-
-
 //typedef struct{
-//        int16_t fd;						/*Socket文件描述符*/
-//        uint8_t debug; 						/*调试标志位*/ 
-//	uint8_t k_value;					/*K值，未被确认的最大数目 */
-//	uint8_t timer1_flag; 					/*定时器1的标志位*/
-//	uint8_t timer2_flag; 					/*定时器2的标志位*/
-//	uint8_t timer3_flag; 					/*定时器3的标志位*/
 //
-//	uint16_t timer1_count; 					/*定时器1的计数值*/
-//	uint16_t timer2_count; 					/*定时器2的计数值*/
-//	uint16_t timer3_count; 					/*定时器3的计数值*/
 //
-//	uint16_t send_SN; 					/*发送序列号 */
-//	uint16_t recv_SN;					/*接收序列号 */
-//	uint16_t has_send_nb; 					/*已经发送帧数量*/ 
-//	uint16_t need_send_nb; 					/*需要发送帧数量*/ 
-//	uint16_t recv_length; 					/*接收到的信息帧长度*/ 
-//	uint8_t recv_buff[IEC104_RECV_BUFF];			/*接收数据缓存区*/ 
-//	uint8_t group_send_buff[IEC104_MAX_GROUP][256]; 	/*需要分组发送缓冲器*/ 
-//	uint8_t group_send_length[IEC104_MAX_GROUP]; 		/*需要分组发送数据长度*/ 
 //} IEC104_Param_T;
+
+
+typedef struct{
+        int16_t fd;						/*Socket文件描述符*/
+        uint8_t debug; 						/*调试标志位*/
+	uint8_t k_value;					/*K值，未被确认的最大数目 */
+	uint8_t timer1_flag; 					/*定时器1的标志位*/
+	uint8_t timer2_flag; 					/*定时器2的标志位*/
+	uint8_t timer3_flag; 					/*定时器3的标志位*/
+
+	uint16_t timer1_count; 					/*定时器1的计数值*/
+	uint16_t timer2_count; 					/*定时器2的计数值*/
+	uint16_t timer3_count; 					/*定时器3的计数值*/
+
+	uint16_t send_SN; 					/*发送序列号 */
+	uint16_t recv_SN;					/*接收序列号 */
+	uint16_t has_send_nb; 					/*已经发送帧数量*/
+	uint16_t need_send_nb; 					/*需要发送帧数量*/
+	uint16_t recv_length; 					/*接收到的信息帧长度*/
+	uint8_t recv_buff[IEC104_RECV_BUFF];			/*接收数据缓存区*/
+	uint8_t group_send_buff[IEC104_MAX_GROUP][256]; 	/*需要分组发送缓冲器*/
+	uint8_t group_send_length[IEC104_MAX_GROUP]; 		/*需要分组发送数据长度*/
+} IEC104_Param_T;
 
 uint16_t iec104_client_nb;   	/*记录当前客户端的链接数量*/ 
 

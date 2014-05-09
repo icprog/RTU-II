@@ -10,6 +10,7 @@
  */
 int main (void){
 
+	//git test
 	uint8_t i;
 	pthread_t thread[MAX_THREAD_NUM];
 
